@@ -1,0 +1,10 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button { /*Defindo o estilo dos botoes */
+	-fx-min-width: 200px;
+    -fx-min-height: 50px; 
+    -fx-text-fill: white;
+    -fx-font-family: "Arial";
+    -fx-font-size: 18pt;    
+    -fx-background-color: linear-gradient(#4169E1, #000000);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}

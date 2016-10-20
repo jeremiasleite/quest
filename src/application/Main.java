@@ -1,0 +1,81 @@
+package application;
+	
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.stage.Stage;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+
+public class Main extends Application {
+	public int numJogadores = 2;
+	@Override
+	public void start(Stage primaryStage) {
+		//Botão incrementa número de jogadores
+		Button btnJogadores = new Button();		
+        btnJogadores.setText("2 Jogadores");        
+        btnJogadores.setCenterShape(true);
+        btnJogadores.setTranslateY(430);
+        btnJogadores.setTranslateX(320);
+        btnJogadores.setOnAction(new EventHandler<ActionEvent>() {            
+            @Override
+            public void handle(ActionEvent event) {
+                //System.out.println("Hello World!");
+            	if(numJogadores==6){
+            		numJogadores=2;
+            	}else{
+            		numJogadores++; 
+            	}            	           	
+            	btnJogadores.setText(numJogadores +" Jogadores");
+            }
+        });
+        
+        //Botão incrementa número de jogadores
+        Button btnJogar = new Button();		
+        btnJogar.setText("Jogar");        
+        btnJogar.setCenterShape(true);
+        btnJogar.setTranslateY(500);
+        btnJogar.setTranslateX(320);
+        btnJogar.setOnAction(new EventHandler<ActionEvent>() {            
+        	@Override
+        	public void handle(ActionEvent event) {
+        		System.out.println("Hello World!");        		
+        	}
+        });
+        
+		try {
+			
+			Group root = new Group();
+			
+			Scene scene = new Scene(root,840,600);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+
+			
+			Canvas canvas = new Canvas( 840, 600 );
+		    root.getChildren().addAll( canvas, btnJogar, btnJogadores );
+		    
+		    GraphicsContext gc = canvas.getGraphicsContext2D();
+		    
+		    Image backgroud = new Image( "backgroud.png" );
+		    gc.drawImage( backgroud, 0, 0, 840, 600);	//(image, posição horizontal em px, posição vertical em px, largura em px, altura em px)
+		    
+		    Image logo = new Image( "logo.png" );
+		    gc.drawImage( logo, 44, 10, 714, 500); //(image, posição horizontal em px, posição vertical em px, largura em px, altura em px)    
+		   
+			
+			primaryStage.setTitle("Bem Vindo ao Quest");
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}
