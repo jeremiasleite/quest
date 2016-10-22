@@ -9,18 +9,25 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.shape.Circle;
+import javafx.scene.text.Font;
 import javafx.scene.image.Image;
+import javafx.scene.paint.Color;
+
+import java.util.concurrent.ThreadLocalRandom;
+
 
 public class Main extends Application {
 	public int numJogadores = 2;
 	@Override
 	public void start(Stage primaryStage) {
-		//Botão incrementa número de jogadores
+		//Botï¿½o incrementa nï¿½mero de jogadores
 		Button btnJogadores = new Button();		
         btnJogadores.setText("2 Jogadores");        
         btnJogadores.setCenterShape(true);
         btnJogadores.setTranslateY(430);
-        btnJogadores.setTranslateX(320);
+        btnJogadores.setTranslateX(420);
         btnJogadores.setOnAction(new EventHandler<ActionEvent>() {            
             @Override
             public void handle(ActionEvent event) {
@@ -34,16 +41,56 @@ public class Main extends Application {
             }
         });
         
-        //Botão incrementa número de jogadores
+        //Botï¿½o incrementa nï¿½mero de jogadores
         Button btnJogar = new Button();		
         btnJogar.setText("Jogar");        
         btnJogar.setCenterShape(true);
         btnJogar.setTranslateY(500);
-        btnJogar.setTranslateX(320);
+        btnJogar.setTranslateX(420);
         btnJogar.setOnAction(new EventHandler<ActionEvent>() {            
         	@Override
         	public void handle(ActionEvent event) {
-        		System.out.println("Hello World!");        		
+        		System.out.println(numJogadores);
+        		int jogador = ThreadLocalRandom.current().nextInt(1, numJogadores + 1);
+        		String vezJogador = "Vez do " + jogador + " Jogador";
+        		
+        		Label label1 = new Label(vezJogador);
+        		label1.setTranslateY(25);
+        		label1.setTranslateX(42);
+        		label1.setFont(new Font("Arial", 20));
+        		label1.setTextFill(Color.web("#FFFF00"));
+
+        		
+        		
+        		Circle c1 = new Circle(); 
+        	    c1.setRadius(5.0);
+        	    c1.setTranslateY(360);
+                c1.setTranslateX(540);
+        	    c1.setCache(true);
+        	    
+        	    Circle c2 = new Circle(); 
+        	    c2.setRadius(5.0);
+        	    c2.setTranslateY(345);
+                c2.setTranslateX(540);
+        	    c2.setCache(true);
+        	    
+        		Group root = new Group();
+    			
+    			Scene scene = new Scene(root,1023,674);
+    			
+    			
+    			Canvas canvas = new Canvas( 1023, 674 );
+    			root.getChildren().addAll(canvas, c1, c2, label1);
+    			
+    		    GraphicsContext gc = canvas.getGraphicsContext2D();
+    		    
+    		    Image tabuleiro = new Image( "Tabuleiro.png" );
+    		    gc.drawImage( tabuleiro, 0, 0, 1023, 674);	//(image, posiï¿½ï¿½o horizontal em px, posiï¿½ï¿½o vertical em px, largura em px, altura em px)
+    		    
+    		    
+    			primaryStage.setTitle("Quest");
+    			primaryStage.setScene(scene);
+    			primaryStage.show();
         	}
         });
         
@@ -51,20 +98,20 @@ public class Main extends Application {
 			
 			Group root = new Group();
 			
-			Scene scene = new Scene(root,840,600);
+			Scene scene = new Scene(root,1023,674);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
 			
-			Canvas canvas = new Canvas( 840, 600 );
+			Canvas canvas = new Canvas( 1023, 674 );
 		    root.getChildren().addAll( canvas, btnJogar, btnJogadores );
 		    
 		    GraphicsContext gc = canvas.getGraphicsContext2D();
 		    
 		    Image backgroud = new Image( "backgroud.png" );
-		    gc.drawImage( backgroud, 0, 0, 840, 600);	//(image, posição horizontal em px, posição vertical em px, largura em px, altura em px)
+		    gc.drawImage( backgroud, 0, 0, 1023, 674);	//(image, posiï¿½ï¿½o horizontal em px, posiï¿½ï¿½o vertical em px, largura em px, altura em px)
 		    
 		    Image logo = new Image( "logo.png" );
-		    gc.drawImage( logo, 44, 10, 714, 500); //(image, posição horizontal em px, posição vertical em px, largura em px, altura em px)    
+		    gc.drawImage( logo, 160, 10, 714, 500); //(image, posiï¿½ï¿½o horizontal em px, posiï¿½ï¿½o vertical em px, largura em px, altura em px)    
 		   
 			
 			primaryStage.setTitle("Bem Vindo ao Quest");
