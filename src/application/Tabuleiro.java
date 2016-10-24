@@ -84,8 +84,8 @@ public class Tabuleiro {
 		Scene scene = new Scene(root,1023,674);
 			
 		Canvas canvas = new Canvas( 1023, 674 );
-		root.getChildren().addAll(canvas, Questão.pergunta(), Tabuleiro.vez(numJogadores),btnFDD, btnXp, btnDsdm, btnScrum);
-		Jogador.jogadores(root);
+		root.getChildren().addAll(canvas, Questão.tema(), Tabuleiro.vez(numJogadores),btnFDD, btnXp, btnDsdm, btnScrum);
+		Jogador.jogadores(numJogadores, root);
 	    GraphicsContext gc = canvas.getGraphicsContext2D();
 	    
 	    Image tabuleiro = new Image( "Tabuleiro.png" );

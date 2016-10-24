@@ -7,7 +7,7 @@ import javafx.scene.shape.Circle;
 
 public class Jogador {
 	
-	public static void jogadores(Group root){
+	public static void jogadores(int numJogadores, Group root){
 		
 		Circle player1 = new Circle(); 
 		player1.setRadius(5.0);
@@ -21,13 +21,45 @@ public class Jogador {
 	    player2.setTranslateX(540);
 	    player2.setCache(true);
 	    
+	    Circle player3 = new Circle(); 
+	    player3.setRadius(5.0);
+	    player3.setTranslateY(360);
+	    player3.setTranslateX(555);
+	    player3.setCache(true);
 	    
+	    Circle player4 = new Circle(); 
+	    player4.setRadius(5.0);
+	    player4.setTranslateY(345);
+	    player4.setTranslateX(555);
+	    player4.setCache(true);
 	    
+	    Circle player5 = new Circle(); 
+	    player5.setRadius(5.0);
+	    player5.setTranslateY(360);
+	    player5.setTranslateX(570);
+	    player5.setCache(true);
+
+	    Circle player6 = new Circle(); 
+	    player6.setRadius(5.0);
+	    player6.setTranslateY(345);
+	    player6.setTranslateX(570);
+	    player6.setCache(true);
 	    
-		root.getChildren().addAll(player1, player2);
-		
-	    
-	    
+	    if(numJogadores==2){
+	    	root.getChildren().addAll(player1, player2);
+	    }
+	    if(numJogadores==3){
+	    	root.getChildren().addAll(player1, player2, player3);
+	    }
+	    if(numJogadores==4){
+	    	root.getChildren().addAll(player1, player2, player3, player4);
+	    }
+	    if(numJogadores==5){
+	    	root.getChildren().addAll(player1, player2, player3, player4, player5);
+	    }        
+	    if(numJogadores==6){
+	    	root.getChildren().addAll(player1, player2, player3, player4, player5, player6);
+	    }
 	    
 	    
 		

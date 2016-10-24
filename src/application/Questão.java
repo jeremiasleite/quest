@@ -8,7 +8,7 @@ import javafx.scene.text.Font;
 public class Questão {
 	static boolean perg = true;
 	static String pergunta = "";
-	public static Label pergunta(){
+	public static Label tema(){
 		
 		if (perg){
 			pergunta = "Escolha o tema da pergunta";
