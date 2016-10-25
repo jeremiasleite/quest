@@ -1,0 +1,186 @@
+{"questoes": [
+	{
+        "pergunta":"O Time de Desenvolvimento escolheu, juntamente com o Product Owner, itens do Product Backlog para desenvolver no Sprint e se comprometeu a atingir uma meta negociada com o Product Owner. Quem deve determinar como o Time de Desenvolvimento deve realizar seu trabalho?",
+        "alternativas":["Os gerentes funcionais a quem o Time de Desenvolvimento presta contas.","O Time de Desenvolvimento.","O ScrumMaster.","O Product Owner."],
+        "resposta":"1", 
+        "tema": "0",
+        "id": "0"
+    },
+	{
+        "pergunta":"Idealmente, qual o papel da equipe de qualidade em um projeto Ágil?",
+        "alternativas":["Apontar os erros cometidos pelo Time de Desenvolvimento.","Garantir a qualidade do produto gerado pelo Time de Desenvolvimento.","Não existe equipe de qualidade em projetos Ágeis, a qualidade faz parte do trabalho do Time de Desenvolvimento.","Testar o produto Desenvolvido pelo Time de Desenvolvimento, apontar os erros cometidos pelo Time de Desenvolvimento e garantir a qualidade do produto gerado pelo Time de Desenvolvimento.","Testar o produto Desenvolvido pelo Time de Desenvolvimento."],
+        "resposta":"2", 
+        "tema": "0",
+        "id": "1"
+    },
+	{
+        "pergunta":"Qual é a forma primária pela qual o ScrumMaster colabora para que um Time de Desenvolvimento seja efetivo?",
+        "alternativas":["Agindo como um facilitador e removendo impedimentos.","Mantendo funcionalidades de maior valor no alto do Product Backlog.","Impedindo o contato entre cliente e Time de Desenvolvimento.","Assegurando que as reuniões iniciem e terminem no horário adequado."],
+        "resposta":"0", 
+        "tema": "0",
+        "id": "2"
+    },
+	{
+        "pergunta":"Em que o planejamento Ágil é diferente do tradicional?",
+        "alternativas":["O planejamento é considerado desperdício, então é feito o mínimo possível.","O planejamento Ágil é similar ao tradicional.","O planejamento Ágil utiliza apenas o nível de detalhes disponível em cada momento.","O planejamento Ágil é feito apenas uma vez.","O plano Ágil não pode ser modificado."],
+        "resposta":"2", 
+        "tema": "0",
+        "id": "3"
+    },
+	{
+        "pergunta":"Um novo desenvolvedor entrou em um Time de Desenvolvimento que já existia. Ele está tendo conflitos todo o tempo com os membros e está tornando o ambiente hostil. Se necessário, quem deve identificar o problema e iniciar o processo para resolvê-lo?",
+        "alternativas":["O RH da empresa é o responsável, pois deve cuidar das contratações e demissões.","O ScrumMaster é responsável, pois ele deve remover impedimentos.","O Product Owner é responsável, pois ele controla o retorno sobre o  investimento do trabalho.","O Time de Desenvolvimento é responsável, pois ele é um time auto-organizado, facilitado pelo ScrumMaster."],
+        "resposta":"3", 
+        "tema": "0",
+        "id": "4"
+    },
+	{
+        "pergunta":"Que frase melhor descreve a principal responsabilidade do Product Owner?",
+        "alternativas":["Otimizar o retorno sobre o investimento do trabalho realizado pelo Time de Desenvolvimento.","Gerenciar o projeto garantindo que o trabalho esteja de acordo com os compromissos estabelecidos com os clientes do projeto.","Dizer ao Time de Desenvolvimento o que ele deve fazer.","Definir e monitorar o cronograma do projeto."],
+        "resposta":"0", 
+        "tema": "0",
+        "id": "5"
+    },
+	{
+        "pergunta":"Uma das razões por que se mede a velocidade do Time de Desenvolvimento nos Sprints é...",
+        "alternativas":["Para que o Product Owner possa cobrar do Time de Desenvolvimento que ele tenha uma velocidade cada vez maior.","Para ajudar o Time de Desenvolvimento a decidir o quanto do Product Backlog ele irá selecionar para desenvolver no Sprint.","Não se deve medir a velocidade do Time de Desenvolvimento em nenhum Sprint.","Para que o Product Owner possa cobrar do Time de Desenvolvimento que ele mantenha sempre a mesma velocidade."],
+        "resposta":"1", 
+        "tema": "0",
+        "id": "6"
+    },
+	{
+        "pergunta":"Quando termina um Sprint?",
+        "alternativas":["Quando o Product Owner determina que a Sprint acabou.","Quando o tempo fixo determinado para a Sprint acaba.","Quando todos os itens do Product Backlog atingem a Definição de Pronto.","Quando todas as tarefas do Sprint Backlog estão completas."],
+        "resposta":"1", 
+        "tema": "0",
+        "id": "7"
+    },
+	{
+        "pergunta":"Para que serve o Daily Scrum (reunião diária)?",
+        "alternativas":["Para que o Time de Desenvolvimento preste contas para o ScrumMaster.","Para que o Time de Desenvolvimento informe seus impedimentos ao ScrumMaster.","Para realizar discussões e ajustes técnicos no trabalho do Time de Desenvolvimento.","Para promover visibilidade sobre o trabalho e comunicação entre os membros do Time de Desenvolvimento."],
+        "resposta":"3", 
+        "tema": "0",
+        "id": "8"
+    },
+	{
+        "pergunta":"Deve-se colocar em produção cada incremento produzido no Sprint...",
+        "alternativas":["Sempre que a equipe garantir que o incremento é entregável.","Sempre que o ScrumMaster decidir que faz sentido.","Sempre que o incremento estiver livre de erros.","Sempre que o Product Owner decidir que faz sentido."],
+        "resposta":"3", 
+        "tema": "0",
+        "id": "9"
+    },
+	{
+        "pergunta":"Com que frequência a reunião de retrospectiva deve ser realizada e por quê?",
+        "alternativas":["Se o Time de Desenvolvimento está entregando, a reunião de retrospectiva não é necessária.","Sempre que o Time de Desenvolvimento achar necessário, pois o time é auto-organizado.","Ao final de cada Sprint, pois é através dela que o Time de Desenvolvimento inspeciona seus processos para então adaptá-los, de forma a melhorar continuamente.","Ao final do projeto, porque as lições aprendidas podem ser usadas nos próximos projetos."],
+        "resposta":"2", 
+        "tema": "0",
+        "id": "10"
+    },
+	{
+        "pergunta":"Quando um Sprint deve ser interrompido?",
+        "alternativas":["Quando o cliente solicita uma mudança urgente.","Quando o Time de Desenvolvimento sente que o trabalho planejado não será terminado.","Quando o Time de Desenvolvimento sente que o trabalho planejado está difícil demais.","Quando a meta estabelecida para o Sprint não mais faz sentido."],
+        "resposta":"3", 
+        "tema": "0",
+        "id": "11"
+    },
+	{
+        "pergunta":"Durante uma reunião de Sprint Planning, a carga de trabalho necessária para cumprir os itens desejados pelo Product Owner parece maior do que a capacidade do Time de Desenvolvimento. Que ação faz mais sentido?",
+        "alternativas":["Time de Desenvolvimento e Product Owner colaboram e possivelmente removem ou modificam itens.","O Time de Desenvolvimento inicia o Sprint e pega emprestados desenvolvedores de outros times.","Aumenta-se o tamanho do Sprint.","Cancela-se o Sprint."],
+        "resposta":"0", 
+        "tema": "0",
+        "id": "12"
+    },
+    {
+        "pergunta":"O princípio Ágil “Simplicidade -a arte de maximizar a quantidade de trabalho não realizado - é essencial” pode ser melhor traduzido em quais termos?",
+        "alternativas":["Evite o desperdício","“Qualidade é o que importa”.","“Entregue apenas o que estiver pronto”.","“Trabalhe o mínimo possível”."],
+        "resposta":"0", 
+        "tema": "0",
+        "id": "13"
+    },
+    {
+        "pergunta":"O que melhor traduz o que se espera de um Time de Desenvolvimento em um projeto Ágil?",
+        "alternativas":["Qualidade e precisão nas suas estimativas.","Trabalhar o tempo que for necessário para terminar o que foi planejado.","Fazer o que seu gerente comandar.","Qualidade no produto gerado, propriedade sobre suas decisões e responsabilidade."],
+        "resposta":"3", 
+        "tema": "0",
+        "id": "14"
+    },
+    {
+        "pergunta":"Em um projeto Ágil, quem deve estimar o trabalho a ser realizado?",
+        "alternativas":["O Time de Desenvolvimento.","O Time de Desenvolvimento e o ScrumMaster.","O Time de Desenvolvimento, o ScrumMaster e o Product Owner.","O Gerente de Projetos."],
+        "resposta":"0", 
+        "tema": "0",
+        "id": "15"
+    },
+    {
+        "pergunta":"Quem tem a última palavra sobre as prioridades dos itens no Product Backlog?",
+        "alternativas":["O ScrumMaster.","O Product Owner.","Os clientes do projeto.","O Gerente de Projetos."],
+        "resposta":"1", 
+        "tema": "0",
+        "id": "16"
+    },
+    {
+        "pergunta":"O que melhor descreve a Sprint Review?",
+        "alternativas":["É uma reunião para que o Product Owner faça uma revisão das atividades do Time de Desenvolvimento durante o Sprint.","É uma reunião para dar aos clientes e demais partes interessadas uma oportunidade de inspecionar o que foi feito durante o Sprint e dar feedback.","É uma reunião utilizada para construir o espírito de equipe.","É uma reunião para que o Time de Desenvolvimento faça uma revisão dos seus processos durante o Sprint."],
+        "resposta":"1", 
+        "tema": "0",
+        "id": "17"
+    },
+    {
+        "pergunta":"Pelo que o ScrumMaster é responsável?",
+        "alternativas":["Por ensinar Scrum e buscar que seja adotado e utilizado corretamente.","Pelas reuniões do Time de Desenvolvimento e pelos objetivos que o Time de Desenvolvimento traça para si.","Por definir as tarefas que o Time de Desenvolvimento deverá fazer na Sprint.","Por definir métricas e gerenciar o desempenho do Time de Desenvolvimento."],
+        "resposta":"0", 
+        "tema": "0",
+        "id": "18"
+    },
+    {
+        "pergunta":"O Product Owner não se envolve em atividades durante o Sprint.",
+        "alternativas":["Trabalhar junto aos clientes, acompanhar a reunião diária e monitorar as tarefas do Time de Desenvolvimento.","O Product Owner não se envolve em atividades durante o Sprint.","Prover feedback sobre o trabalho do Time de Desenvolvimento quando solicitado, responder a perguntas do Time de Desenvolvimento sobre itens no Sprint atual e preparar itens para o próximo Sprint junto ao Time de Desenvolvimento.","Prover feedback sobre o trabalho do Time de Desenvolvimento quando solicitado, responder a perguntas do Time de Desenvolvimento sobre itens no Sprint atual e priorizar as tarefas do Time de Desenvolvimento."],
+        "resposta":"2", 
+        "tema": "0",
+        "id": "19"
+    },
+    {
+        "pergunta":"Pelo que o ScrumMaster é responsável?",
+        "alternativas":["Por ensinar Scrum e buscar que seja adotado e utilizado corretamente.","Pelas reuniões do Time de Desenvolvimento e pelos objetivos que o Time de Desenvolvimento traça para si.","Por definir as tarefas que o Time de Desenvolvimento deverá fazer na Sprint.","Por definir métricas e gerenciar o desempenho do Time de Desenvolvimento."],
+        "resposta":"0", 
+        "tema": "0",
+        "id": "20"
+    },
+    {
+        "pergunta":"No método ágil XP, as entregas de partes funcionais do projeto são divididas em ciclos, geralmente compreendidos no período de 1 a 4 semanas. Estes ciclos denominam-se,",
+        "alternativas":["iterações.","reunião de planejamento e backlog.","período de entregae reunião de revisão.","backlog e planejamento da produção."],
+        "resposta":"0", 
+        "tema": "1",
+        "id": "21"
+    },
+    {
+        "pergunta":"O Extreme Programming (XP) é, talvez, o mais conhecido e mais utilizado dos métodos ágeis. Dentre suas práticas se encontram programação em pares, integração contínua, refatoração e",
+        "alternativas":["propriedade coletiva, que garante uma participação nos lucros aos membros da equipe de desenvolvimento, técnica que incentiva e aumenta o desempenho de toda a equipe."," Desenvolvimento incremental e sustentado por meio de pequenos e frequentes releases do sistema. Os requisitos são baseados em cenários ou em simples histórias de clientes"," processo de desenvolvimento contínuo, em que a equipe se mantém focada no sistema até que uma funcionalidade específica seja entregue, comumente agregando horas extras ao turno de trabalho.","envolvimento do cliente apenas na fase final do sistema, fator que difere de outras metodologias como SCRUM e TDD e confere agilidade ao processo de desenvolvimento."],
+        "resposta":"1", 
+        "tema": "1",
+        "id": "22"
+    },
+    {
+        "pergunta":"O XP (Extreme Programming) utiliza uma abordagem orientada a objetos como seu paradigma de desenvolvimento predileto. Ele",
+        "alternativas":["recomenda que a equipe XP e os clientes trabalhem de forma separada para não mudar o compromisso básico definido para a versão a ser entregue.","segue rigorosamente o princípio FDD - Feature Driven Development.","inclui um conjunto de regras e práticas que ocorrem no contexto de 3 atividades de arcabouço: projeto, implementação e entrega.","recomenda que duas pessoas trabalhem juntas para criar o código correspondente a uma história."],
+        "resposta":"3", 
+        "tema": "1",
+        "id": "23"
+    },
+    {
+        "pergunta":"Assegurar que a equipe se concentre em fazer, primeiro, apenas aquilo que é claramente necessário e evite fazer o que poderia vir a ser necessário, mas ainda não se provou essencial. Este é um dos cinco valores fundamentais do XP (Extreme Programming), denominado",
+        "alternativas":["coragem.","respeito.","comunicação.","simplicidade."],
+        "resposta":"3", 
+        "tema": "1",
+        "id": "24"
+    },
+    {
+        "pergunta":"São práticas recomendadas pelo processo ágil de desenvolvimento de software Extreme Programming (XP), EXCETO a",
+        "alternativas":["Programação em Pares","Integração Contínua","Documentação Abundante e Detalhada","Padronização de Código"],
+        "resposta":"2", 
+        "tema": "1",
+        "id": "25"
+    },
+    
+    
+]	}
