@@ -20,71 +20,12 @@ public class Tabuleiro {
 
 	public static void tabuleiro(int numJogadores, Stage primaryStage) {
 		// TODO Auto-generated method stub
-		
-		
-	    
-	    Button btnScrum = new Button();		
-	    btnScrum.setText("Scrum");        
-	    btnScrum.setCenterShape(true);
-	    btnScrum.setTranslateY(440);
-	    btnScrum.setTranslateX(770);
-	    btnScrum.setOnAction(new EventHandler<ActionEvent>() {            
-        	@Override
-        	public void handle(ActionEvent event) {
-        		
-        		Inicio.inicio(numJogadores, primaryStage);
-        		
-        	}
-        });
-	    
-	    Button btnDsdm = new Button();		
-	    btnDsdm.setText("DSDM");        
-	    btnDsdm.setCenterShape(true);
-	    btnDsdm.setTranslateY(440);
-	    btnDsdm.setTranslateX(880);
-	    btnDsdm.setOnAction(new EventHandler<ActionEvent>() {            
-        	@Override
-        	public void handle(ActionEvent event) {
-        		
-        		Inicio.inicio(numJogadores, primaryStage);
-        		
-        	}
-        });
-	    
-	    Button btnXp = new Button();		
-	    btnXp.setText("XP");        
-	    btnXp.setCenterShape(true);
-	    btnXp.setTranslateY(500);
-	    btnXp.setTranslateX(780);
-	    btnXp.setOnAction(new EventHandler<ActionEvent>() {            
-        	@Override
-        	public void handle(ActionEvent event) {
-        		
-        		Inicio.inicio(numJogadores, primaryStage);
-        		
-        	}
-        });
-	    
-	    Button btnFDD = new Button();		
-	    btnFDD.setText("FDD");        
-	    btnFDD.setCenterShape(true);
-	    btnFDD.setTranslateY(500);
-	    btnFDD.setTranslateX(885);
-	    btnFDD.setOnAction(new EventHandler<ActionEvent>() {            
-        	@Override
-        	public void handle(ActionEvent event) {
-        		
-        		Inicio.inicio(numJogadores, primaryStage);
-        		
-        	}
-        });
-	    
-	    Group root = new Group();
+		Group root = new Group();
 		
 		Scene scene = new Scene(root,1023,674);
 			
 		Canvas canvas = new Canvas( 1023, 674 );
-		root.getChildren().addAll(canvas, Questão.tema(), Tabuleiro.vez(numJogadores),btnFDD, btnXp, btnDsdm, btnScrum);
+		root.getChildren().addAll(canvas, Questao.tema(), Tabuleiro.vez(numJogadores));
 		Jogador.jogadores(numJogadores, root);
 	    GraphicsContext gc = canvas.getGraphicsContext2D();
 	    
@@ -95,8 +36,79 @@ public class Tabuleiro {
 		primaryStage.show();
 		
 	    
+	    Button btnScrum = new Button();		
+	    btnScrum.setText("Scrum");        
+	    btnScrum.setCenterShape(true);
+	    btnScrum.setTranslateY(440);
+	    btnScrum.setTranslateX(770);
 	    
 	    
+	    Button btnDsdm = new Button();		
+	    btnDsdm.setText("DSDM");        
+	    btnDsdm.setCenterShape(true);
+	    btnDsdm.setTranslateY(440);
+	    btnDsdm.setTranslateX(880);
+	    
+	    
+	    Button btnXp = new Button();		
+	    btnXp.setText("XP");        
+	    btnXp.setCenterShape(true);
+	    btnXp.setTranslateY(500);
+	    btnXp.setTranslateX(780);
+	    
+	    
+	    Button btnFDD = new Button();		
+	    btnFDD.setText("FDD");        
+	    btnFDD.setCenterShape(true);
+	    btnFDD.setTranslateY(500);
+	    btnFDD.setTranslateX(885);
+	    
+	    
+	    btnScrum.setOnAction(new EventHandler<ActionEvent>() {            
+        	@Override
+        	public void handle(ActionEvent event) {
+        		
+        		
+        		root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum);
+        		Aposta.aposta(numJogadores, root, primaryStage);
+        		
+        		
+        	}
+        });
+	    
+	    btnDsdm.setOnAction(new EventHandler<ActionEvent>() {            
+        	@Override
+        	public void handle(ActionEvent event) {
+        		
+        		root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum);
+        		Aposta.aposta(numJogadores, root, primaryStage);
+        		
+        	}
+        });
+	    
+	    
+	    
+	    btnXp.setOnAction(new EventHandler<ActionEvent>() {            
+        	@Override
+        	public void handle(ActionEvent event) {
+        		
+        		root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum);
+        		Aposta.aposta(numJogadores, root, primaryStage);
+        		
+        	}
+        });
+	    
+	    btnFDD.setOnAction(new EventHandler<ActionEvent>() {            
+        	@Override
+        	public void handle(ActionEvent event) {
+        		
+        		root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum);
+        		Aposta.aposta(numJogadores, root, primaryStage);
+        		
+        	}
+        });
+	    
+	    root.getChildren().addAll(btnFDD, btnXp, btnDsdm, btnScrum);
 		
 	}
 	

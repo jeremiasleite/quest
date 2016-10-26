@@ -5,17 +5,26 @@ import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
-public class Questão {
+public class Questao {
 	static boolean perg = true;
+	static boolean primeira = false;
 	static String pergunta = "";
 	public static Label tema(){
 		
+		
+			
 		if (perg){
 			pergunta = "Escolha o tema da pergunta";
+			
 			perg = false;
+			primeira = true;
+		
 		}else {
+		
 			pergunta = "Pergunta";
 		}
+		
+		
 		
 		
 		Label labelPergunta = new Label(pergunta);
@@ -23,6 +32,7 @@ public class Questão {
 		labelPergunta.setTranslateX(740);
 		labelPergunta.setFont(new Font("Helvetica", 20));
 		labelPergunta.setTextFill(Color.web("#000000"));
+		
 		
 		return labelPergunta;
 		

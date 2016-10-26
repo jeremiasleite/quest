@@ -16,7 +16,7 @@ public class Inicio {
 		Scene scene = new Scene(root,1023,674);		
 		
 		Canvas canvas = new Canvas( 1023, 674 );
-		root.getChildren().addAll(canvas, Questão.tema(), Tabuleiro.vez(numJogadores), Questão.resposta());
+		root.getChildren().addAll(canvas, Questao.tema(), Tabuleiro.vez(numJogadores), Questao.resposta());
 		
 	    GraphicsContext gc = canvas.getGraphicsContext2D();
 	    
@@ -24,6 +24,7 @@ public class Inicio {
 	    gc.drawImage( tabuleiro, 0, 0, 1023, 674);	
 	    
 	    Jogador.jogadores(numJogadores, root);
+	    
 	    
 		primaryStage.setTitle("Quest");
 		primaryStage.setScene(scene);
