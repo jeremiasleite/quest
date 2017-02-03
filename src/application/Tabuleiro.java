@@ -16,8 +16,7 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Tabuleiro {
-
-
+	
 	public static void tabuleiro(int numJogadores, Stage primaryStage) {
 		// TODO Auto-generated method stub
 		Group root = new Group();
@@ -26,7 +25,7 @@ public class Tabuleiro {
 			
 		Canvas canvas = new Canvas( 1023, 674 );
 		root.getChildren().addAll(canvas, Questao.tema(), Tabuleiro.vez(numJogadores));
-		Jogador.jogadores(numJogadores, root);
+		Jogador.jogadores_init(numJogadores, root);
 	    GraphicsContext gc = canvas.getGraphicsContext2D();
 	    
 	    Image tabuleiro = new Image( "Tabuleiro.png" );
@@ -63,16 +62,32 @@ public class Tabuleiro {
 	    btnFDD.setTranslateY(500);
 	    btnFDD.setTranslateX(885);
 	    
+//****** Botão de teste da movimentação dos jogdores *******
+	    Button btnT = new Button();		
+	    btnT.setText("Mover");        
+	    btnT.setCenterShape(true);
+	    btnT.setTranslateY(280);
+	    btnT.setTranslateX(830);
 	    
+	    btnT.setOnAction(new EventHandler<ActionEvent>() {  
+	    	int i = 1;
+        	@Override
+        	public void handle(ActionEvent event) {
+        		
+        		Jogador.andar(2, i, root); 
+        		i++;
+
+        	}
+        });
+//************************************************************* 
+	   
 	    btnScrum.setOnAction(new EventHandler<ActionEvent>() {            
         	@Override
         	public void handle(ActionEvent event) {
         		
-        		
         		root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum);
         		Aposta.aposta(numJogadores, root, primaryStage);
-        		
-        		
+
         	}
         });
 	    
@@ -108,7 +123,7 @@ public class Tabuleiro {
         	}
         });
 	    
-	    root.getChildren().addAll(btnFDD, btnXp, btnDsdm, btnScrum);
+	    root.getChildren().addAll(btnFDD, btnXp, btnDsdm, btnScrum, btnT);
 		
 	}
 	

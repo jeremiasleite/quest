@@ -23,7 +23,7 @@ public class Inicio {
 	    Image tabuleiro = new Image( "Tabuleiro.png" );
 	    gc.drawImage( tabuleiro, 0, 0, 1023, 674);	
 	    
-	    Jogador.jogadores(numJogadores, root);
+	    Jogador.jogadores_init(numJogadores, root);
 	    
 	    
 		primaryStage.setTitle("Quest");
