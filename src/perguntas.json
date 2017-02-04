@@ -181,6 +181,68 @@
         "tema": "1",
         "id": "25"
     },
-    
+    {
+        "pergunta":"Os métodos ágeis de desenvolvimento de software como eXtreme Programming – XP consideram um conjunto de valores fundamentais derivados do manifesto ágil. Assim, estes métodos valorizam MENOS",
+        "alternativas":["O software funcionando, do que uma documentação abrangente.","A colaboração com o cliente, do que negociação de contratos.","A resposta rápida a mudanças, do que seguir um plano previamente definido.","A rigorosidade dos processos, do que a adaptação às mudanças."],
+        "resposta":"4", 
+        "tema": "1",
+        "id": "26"
+    },
+    {
+        "pergunta":"A opção que apresenta uma característica relacionada a projetos que utilizam o método XP (eXtreme Programming), muito utilizado em projetos para o desenvolvimento de softwares.",
+        "alternativas":["Programação individual","Cliente off-site","Grandes releases","Planejamento incremental "],
+        "resposta":"4", 
+        "tema": "1",
+        "id": "27"
+    },
+    {
+        "pergunta":"Usa-se um framework de testes iniciais automatizados para escrever os testes para uma nova funcionalidade antes que ela seja implementada. Esta é uma regra de codificação recomendada pelo método:",
+        "alternativas":["Scrum.","Extreme Programming.","Feature Driven Development.","Dynamic Systems Development Method."],
+        "resposta":"2", 
+        "tema": "1",
+        "id": "28"
+    },
+    {
+        "pergunta":"No desenvolvimento de software em XP, são empregadas algumas práticas. Avalie as assertivas abaixo.",
+        "alternativas":["Desenvolvimento orientado a testes.","Programação em pares.","Time coeso.","Integração contínua. "],
+        "resposta":"1", 
+        "tema": "1",
+        "id": "29"
+    },
+    {
+        "pergunta":"Extreme Programming (XP) é um exemplo de método ágil que foi definido por Kent Beck. O XP inclui uma abordagem de teste que",
+        "alternativas":["Valoriza o desenvolvimento test-last.","Depende da técnica de teste baseada em defeitos","Desenvolve teste incremental baseado em cenários.","Utiliza processo de teste dirigido a planos."],
+        "resposta":"3", 
+        "tema": "1",
+        "id": "30"
+    },
+    {
+        "pergunta":"São exemplos de práticas da programação extrema (extreme programming):",
+        "alternativas":["Integração contínua e releases longas e raras.","Programação em pares e refatoração.","Presença do cliente e excesso de horas extras.","Ausência de testes e planejamento incremental."],
+        "resposta":"2", 
+        "tema": "1",
+        "id": "31"
+    },
+    {
+        "pergunta":"Uma prática que NÃO é adotada por Extreme Programming (XP) é",
+        "alternativas":["Usar duas pessoas trabalhando juntas em um único computador","Criar os testes antes do código que será testado.","Integrar continuamente o código recém-produzido com o código existente no repositório.","Variar a duração de cada iteração durante todo o projeto para acomodar eventuais mudanças"],
+        "resposta":"4", 
+        "tema": "1",
+        "id": "32"
+    },
+    {
+        "pergunta":"Assinale a alternativa que NÃO apresenta uma prática da Programação Extrema (Extreme Programming).",
+        "alternativas":["Programação em pares.","Integração contínua.","Integração contínua.","Grandes Releases."],
+        "resposta":"4", 
+        "tema": "1",
+        "id": "33"
+    },
+    {
+        "pergunta":"No modelo de desenvolvimento XP (Extreme Programming) há uma atividade na qual os usuários descrevem as funcionalidades que o software deverá possuir. Essa descrição recebe a denominação de",
+        "alternativas":["Scrum.","Histórias de usuário.","Modo de codificação. ","Documento colaborativo."],
+        "resposta":"2", 
+        "tema": "1",
+        "id": "34"
+    }            
     
 ]	}

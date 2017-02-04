@@ -1,4 +1,4 @@
-# quest
+# QUEST
 Game Quest em JavaFX
 
 Projeto desenvolvido por alunos da Universidade Federal Rural de Pernambuco - UFRPE de Ciência da Computação na disciplina Metódologia Ágeis.
