@@ -14,7 +14,7 @@ public class GerenciadorQuestao {
 	private ArrayList<Questao> questaoFDD;
 	private boolean estaRemovidoFDD[];
 	private ArrayList<Questao> questaoDSDM;
-	private boolean estaRemovidoDSDM[];
+	private boolean estaRemovidoDSDM[];	
 
 	public GerenciadorQuestao() {
 		JSONRead lerQuestao = new JSONRead();

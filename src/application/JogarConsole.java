@@ -10,7 +10,7 @@ import model.Questao;
 public class JogarConsole {
 	private final int nCasas = 23;
 	private int nJogadores;
-	
+	private boolean vencedor = false;
 	private ArrayList<Jogador> jogadores = new ArrayList<>();
 	private GerenciadorQuestao gestorQuestao;
 	private int tabuleiro[] = {-1,0,1,2,3,0,4,3,0,1,2,3,5,2,3,0,6,3,5,2,3,0,7};//inicio:-1, sc:0, xp:1, fdd:2, dsdm:3, xp/fdd:4, sc/xp:5, sc/fdd:6, fim:7
@@ -25,7 +25,7 @@ public class JogarConsole {
 		Scanner ler = new Scanner(System.in);
 		for (int y = 0; y < 4; y++) {// quatro rodadas para reiniciar fichas
 			for (int i = 0; i < nJogadores; i++) {
-				//((Jogador) this.jogadores.get(i)).reiniciarFichas();
+				this.jogadores.get(i).reiniciarFichas();
 			}
 			for (int j = 0; j < nJogadores; j++) {//rodada jogadores
 				int vez = j;
@@ -41,6 +41,17 @@ public class JogarConsole {
 				}else{
 					tema = tabuleiro[this.jogadores.get(vez).getPosicao()];
 				}					
+				
+				if(tema == 4){
+					System.out.println("Selecione o tema: 1-XP, 2-FDD");
+					tema = ler.nextInt();
+				}else if(tema == 5){
+					System.out.println("Selecione o tema: 0-SC, 1-XP");
+					tema = ler.nextInt();
+				}else if(tema == 6){
+					System.out.println("Selecione o tema: 0-SC, 2-FDD");
+					tema = ler.nextInt();
+				}
 				
 				Questao  questao= this.gestorQuestao.sortearQuestao(tema);
 				System.out.println(questao.getPergunta());
@@ -70,6 +81,8 @@ public class JogarConsole {
 					this.jogadores.get(vez).setPosicao(lerAposta);
 					if(this.jogadores.get(vez).getPosicao()>=22){
 						System.out.println("O jogador " + vez + "Venceu");
+						this.vencedor =true;
+						break;
 					}
 				}else{
 					System.out.println("Errou");
@@ -78,6 +91,10 @@ public class JogarConsole {
 				for (int i = 0; i < nJogadores; i++) {
 					System.out.println("Posicao jogador "+i+":"+this.jogadores.get(i).getPosicao());
 				}		
+			}
+			
+			if(this.vencedor){
+				break;
 			}
 		}	
 		
