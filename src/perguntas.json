@@ -156,49 +156,49 @@
     {
         "pergunta":"O Extreme Programming (XP) é, talvez, o mais conhecido e mais utilizado dos métodos ágeis. Dentre suas práticas se encontram programação em pares, integração contínua, refatoração e",
         "alternativas":["propriedade coletiva, que garante uma participação nos lucros aos membros da equipe de desenvolvimento, técnica que incentiva e aumenta o desempenho de toda a equipe."," Desenvolvimento incremental e sustentado por meio de pequenos e frequentes releases do sistema. Os requisitos são baseados em cenários ou em simples histórias de clientes"," processo de desenvolvimento contínuo, em que a equipe se mantém focada no sistema até que uma funcionalidade específica seja entregue, comumente agregando horas extras ao turno de trabalho.","envolvimento do cliente apenas na fase final do sistema, fator que difere de outras metodologias como SCRUM e TDD e confere agilidade ao processo de desenvolvimento."],
-        "resposta":"1", 
+        "resposta":"0", 
         "tema": "1",
         "id": "22"
     },
     {
         "pergunta":"O XP (Extreme Programming) utiliza uma abordagem orientada a objetos como seu paradigma de desenvolvimento predileto. Ele",
         "alternativas":["recomenda que a equipe XP e os clientes trabalhem de forma separada para não mudar o compromisso básico definido para a versão a ser entregue.","segue rigorosamente o princípio FDD - Feature Driven Development.","inclui um conjunto de regras e práticas que ocorrem no contexto de 3 atividades de arcabouço: projeto, implementação e entrega.","recomenda que duas pessoas trabalhem juntas para criar o código correspondente a uma história."],
-        "resposta":"3", 
+        "resposta":"2", 
         "tema": "1",
         "id": "23"
     },
     {
         "pergunta":"Assegurar que a equipe se concentre em fazer, primeiro, apenas aquilo que é claramente necessário e evite fazer o que poderia vir a ser necessário, mas ainda não se provou essencial. Este é um dos cinco valores fundamentais do XP (Extreme Programming), denominado",
         "alternativas":["coragem.","respeito.","comunicação.","simplicidade."],
-        "resposta":"3", 
+        "resposta":"2", 
         "tema": "1",
         "id": "24"
     },
     {
         "pergunta":"São práticas recomendadas pelo processo ágil de desenvolvimento de software Extreme Programming (XP), EXCETO a",
         "alternativas":["Programação em Pares","Integração Contínua","Documentação Abundante e Detalhada","Padronização de Código"],
-        "resposta":"2", 
+        "resposta":"1", 
         "tema": "1",
         "id": "25"
     },
     {
         "pergunta":"Os métodos ágeis de desenvolvimento de software como eXtreme Programming – XP consideram um conjunto de valores fundamentais derivados do manifesto ágil. Assim, estes métodos valorizam MENOS",
         "alternativas":["O software funcionando, do que uma documentação abrangente.","A colaboração com o cliente, do que negociação de contratos.","A resposta rápida a mudanças, do que seguir um plano previamente definido.","A rigorosidade dos processos, do que a adaptação às mudanças."],
-        "resposta":"4", 
+        "resposta":"3", 
         "tema": "1",
         "id": "26"
     },
     {
         "pergunta":"A opção que apresenta uma característica relacionada a projetos que utilizam o método XP (eXtreme Programming), muito utilizado em projetos para o desenvolvimento de softwares.",
         "alternativas":["Programação individual","Cliente off-site","Grandes releases","Planejamento incremental "],
-        "resposta":"4", 
+        "resposta":"3", 
         "tema": "1",
         "id": "27"
     },
     {
         "pergunta":"Usa-se um framework de testes iniciais automatizados para escrever os testes para uma nova funcionalidade antes que ela seja implementada. Esta é uma regra de codificação recomendada pelo método:",
         "alternativas":["Scrum.","Extreme Programming.","Feature Driven Development.","Dynamic Systems Development Method."],
-        "resposta":"2", 
+        "resposta":"1", 
         "tema": "1",
         "id": "28"
     },
@@ -206,113 +206,162 @@
         "pergunta":"No desenvolvimento de software em XP, são empregadas algumas práticas. Avalie as assertivas abaixo.",
         "alternativas":["Desenvolvimento orientado a testes.","Programação em pares.","Time coeso.","Integração contínua. "],
         "resposta":"1", 
-        "tema": "1",
+        "tema": "0",
         "id": "29"
     },
     {
         "pergunta":"Extreme Programming (XP) é um exemplo de método ágil que foi definido por Kent Beck. O XP inclui uma abordagem de teste que",
         "alternativas":["Valoriza o desenvolvimento test-last.","Depende da técnica de teste baseada em defeitos","Desenvolve teste incremental baseado em cenários.","Utiliza processo de teste dirigido a planos."],
-        "resposta":"3", 
+        "resposta":"2", 
         "tema": "1",
         "id": "30"
     },
     {
         "pergunta":"São exemplos de práticas da programação extrema (extreme programming):",
         "alternativas":["Integração contínua e releases longas e raras.","Programação em pares e refatoração.","Presença do cliente e excesso de horas extras.","Ausência de testes e planejamento incremental."],
-        "resposta":"2", 
+        "resposta":"1", 
         "tema": "1",
         "id": "31"
     },
     {
         "pergunta":"Uma prática que NÃO é adotada por Extreme Programming (XP) é",
         "alternativas":["Usar duas pessoas trabalhando juntas em um único computador","Criar os testes antes do código que será testado.","Integrar continuamente o código recém-produzido com o código existente no repositório.","Variar a duração de cada iteração durante todo o projeto para acomodar eventuais mudanças"],
-        "resposta":"4", 
+        "resposta":"3", 
         "tema": "1",
         "id": "32"
     },
     {
         "pergunta":"Assinale a alternativa que NÃO apresenta uma prática da Programação Extrema (Extreme Programming).",
         "alternativas":["Programação em pares.","Integração contínua.","Integração contínua.","Grandes Releases."],
-        "resposta":"4", 
+        "resposta":"3", 
         "tema": "1",
         "id": "33"
     },
     {
         "pergunta":"No modelo de desenvolvimento XP (Extreme Programming) há uma atividade na qual os usuários descrevem as funcionalidades que o software deverá possuir. Essa descrição recebe a denominação de",
         "alternativas":["Scrum.","Histórias de usuário.","Modo de codificação. ","Documento colaborativo."],
-        "resposta":"2", 
+        "resposta":"1", 
         "tema": "1",
         "id": "34"
     },
     {
         "pergunta":"FDD (Feature Driven Development) é uma metodologia muito objetiva, possuindo apenas duas fases:",
         "alternativas":["Concepção & Planejamento e Construção.","Decomposição Funcional e Construção.","Análise dos Requisitos e Desenvolvimento.","Planejamento Incremental e Desenvolvimento por Funcionalidade."],
-        "resposta":"1", 
+        "resposta":"0", 
         "tema": "2",
         "id": "35"
     },
     {
         "pergunta":"O Feature Driven Development − FDD é uma metodologia ágil de desenvolvimento de software que",
         "alternativas":["Divide o processo de desenvolvimento nas etapas de Planejamento, Construção, Implantação e Manutenção.","Normalmente possui papéis definidos relacionados ao desenvolvimento, como Gerente de Projeto, Testador etc.","Está associado a práticas de modelagem estruturada, não orientada a objetos do domínio.","Usa a propriedade coletiva do código, ou seja, o código não tem um dono definido."],
-        "resposta":"2", 
+        "resposta":"1", 
         "tema": "2",
         "id": "36"
     },
     {
         "pergunta":"'É um método ágil que enfatiza o uso de orientação a objetos. Possui apenas duas fases: 1 - Concepção e Planejamento; e 2 - Construção. A fase de Concepção e Planejamento possui três disciplinas: 1 - Desenvolver Modelo Abrangente; 2 - Construir Lista de Funcionalidades; e 3 - Planejar por funcionalidade. A fase de Construção possui duas disciplinas: 1 - Detalhar por Funcionalidade; e Construir por Funcionalidade.' O texto descreve o método:",
         "alternativas":["Feature-Driven Development (FDD).","Daily Scrum.","Crystal Clear.","Extreme Programming (XP)."],
-        "resposta":"1", 
+        "resposta":"0", 
         "tema": "2",
         "id": "37"
     },
     {
         "pergunta":"É um método ágil que enfatiza o uso da orientação a objetos. Possui duas fases que são 'Concepção e Planejamento' e 'Construção'. A fase de 'Concepção e Planejamento' possui três processos: 'Desenvolver Modelo Abrangente', 'Construir Lista de Funcionalidade' e 'Planejar por Funcionalidade'. Já a fase de 'Construção' incorpora os processos 'Detalhar por Funcionalidade' e 'Construir por Funcionalidade'. Trata-se do método",
         "alternativas":["Dynamic Systems Development Method − DSDM.","eXtreme Programming − XP.","Feature-Driven Development − FDD.","Crystal Clear − CC."],
-        "resposta":"3", 
+        "resposta":"2", 
         "tema": "2",
         "id": "38"
     },
     {
         "pergunta":"A Feature Driven Development (FDD) é uma metodologia ágil de desenvolvimento de software, sobre a qual é correto afirmar:",
         "alternativas":["Não pode ser combinada a outras técnicas para a produção de sistemas.","Possui cinco processos: Desenvolver um Modelo Abrangente, Construir a Lista de Funcionalidades, Planejar por Funcionalidade, Detalhar por Funcionalidade e Implementar por Funcionalidade.","Mantém seu foco apenas na fase de modelagem.","Mantém seu foco apenas na fase de implementação."],
-        "resposta":"2", 
+        "resposta":"1", 
         "tema": "2",
         "id": "39"
     },
     {
         "pergunta":"'Este modelo ágil possui uma abordagem de desenvolvimento de software que premia a 'manobrabilidade' durante um jogo cooperativo de invenção e comunicação de recursos limitados, com o principal objetivo de entregar softwares úteis funcionando e com o objetivo secundário de preparar‐se para o jogo seguinte.'  Segundo Pressman, esse modelo ágil de processo é denominado",
         "alternativas":["Extreme Programming.","Scrum.","Crystal.","FDD."],
-        "resposta":"3", 
+        "resposta":"2", 
         "tema": "2",
         "id": "40"
     },
     {
         "pergunta":"O TDD − Test Driven Development (Desenvolvimento orientado a teste)",
         "alternativas":["É parte das metodologias ágeis UP − Unified Process e XP − Extreme Programming, tendo sido criado para ser usado em metodologias que respeitam os 4 princípios do Manifesto Ágil.","Baseia-se em um ciclo simples: escreve-se um código -> cria-se um teste para passar no código -> refatora-se.","Propõe a criação de testes que validem o código como um todo para reduzir o tempo de desenvolvimento.","Beneficia-se de testes que seguem o modelo FIRST: F (Fast) I (Isolated) R (Repeatable) S (Self-verifying) T (Timely)."],
-        "resposta":"4", 
+        "resposta":"3", 
         "tema": "2",
         "id": "41"
     },
     {
         "pergunta":"Um Técnico está trabalhando em um projeto de desenvolvimento de software usando um método ágil que divide o processo de desenvolvimento em duas grandes fases: 1a Concepção e Planejamento; 2a Construção. A fase de Construção utiliza apenas duas disciplinas (processos). O nome do método é",
         "alternativas":["Feature-Driven Development","Daily Scrum","Dynamic Systems Development","Rapid Application Development"],
-        "resposta":"1", 
+        "resposta":"0", 
         "tema": "2",
         "id": "42"
     },
     {
         "pergunta":"O TDD (test driven development) apresenta como vantagem a leitura das regras de negócio a partir dos testes, e, como desvantagem, a necessidade de mais linhas de códigos que a abordagem tradicional, o que gera um código adicional.",
         "alternativas":["Impede que seja aplicada a prática de programação em pares, que é substituída pela interação entre analista de teste, testador e programador.","Refere-se a uma técnica de programação cujo principal objetivo é escrever um código funcional limpo, a partir de um teste que tenha falhado.","Refere-se a uma metodologia de testes em que se devem testar condições, loops e operações; no entanto, por questão de simplicidade, não devem ser testados polimorfismos.","nda"],
-        "resposta":"3", 
+        "resposta":"2", 
         "tema": "2",
         "id": "43"
     },
     {
         "pergunta":"São exemplos de novas metodologias, citadas no Manifesto Ágil, que mostram um crescente interesse em novas abordagens para o desenvolvimento de software:",
         "alternativas":["Extreme Programming","Dynamic Systems Development Methodology","SCRUM","Feature‐Driven Development e Crystal Methodologies"],
-        "resposta":"2", 
-        "tema": "2",
+        "resposta":"1", 
+        "tema": "3",
         "id": "44"
+    },
+    {
+        "pergunta":"'É um método ágil que enfatiza o uso de orientação a objetos. Possui apenas duas fases: 1 - Concepção e Planejamento; e 2 - Construção. A fase de Concepção e Planejamento possui três disciplinas: 1 - Desenvolver Modelo Abrangente; 2 - Construir Lista de Funcionalidades; e 3 - Planejar por funcionalidade. A fase de Construção possui duas disciplinas: 1 - Detalhar por Funcionalidade; e Construir por Funcionalidade.' O texto descreve o método:",
+        "alternativas":["Feature-Driven Development (FDD).","Daily Scrum.","Crystal Clear.","Dynamic Systems Development Method (DSDM)."],
+        "resposta":"0", 
+        "tema": "3",
+        "id": "45"
+    },
+    {
+        "pergunta":"É um método ágil que enfatiza o uso da orientação a objetos. Possui duas fases que são 'Concepção e Planejamento' e 'Construção'. A fase de 'Concepção e Planejamento' possui três processos: 'Desenvolver Modelo Abrangente', 'Construir Lista de Funcionalidade' e 'Planejar por Funcionalidade'. Já a fase de 'Construção' incorpora os processos 'Detalhar por Funcionalidade' e 'Construir por Funcionalidade'. Trata-se do método",
+        "alternativas":["Dynamic Systems Development Method − DSDM.","eXtreme Programming − XP.","Feature-Driven Development − FDD.","Crystal Clear − CC."],
+        "resposta":"2", 
+        "tema": "3",
+        "id": "46"
+    },
+    {
+        "pergunta":"Em metodologias de desenvolvimento de sistemas ágeis, existe uma em especial que tem seus esforços focados na conclusão parcial da solução completa do sistema, mesmo que isso pareça contraditório para uma metodologia que pretende resolver o problema de desenvolvimento de sistemas. O texto refere-se a:",
+        "alternativas":["SCRUM.","MER (Modelo Entidade Relacionamento).","Engenharia de Requisitos.","DSDM (Dynamic Systems Development Methodology)."],
+        "resposta":"3", 
+        "tema": "3",
+        "id": "47"
+    },
+    {
+        "pergunta":"'Este modelo ágil possui uma abordagem de desenvolvimento de software que premia a 'manobrabilidade' durante um jogo cooperativo de invenção e comunicação de recursos limitados, com o principal objetivo de entregar softwares úteis funcionando e com o objetivo secundário de preparar‐se para o jogo seguinte.' Segundo Pressman, esse modelo ágil de processo é denominado",
+        "alternativas":["Extreme Programming.","DSDM – Dynamic Systems Development Method – Método de Desenvolvimento Dinâmico de Sistemas.","SCRUM","Crystal"],
+        "resposta":"3", 
+        "tema": "3",
+        "id": "47"
+    },
+    {
+        "pergunta":"Um Técnico está trabalhando em um projeto de desenvolvimento de software usando um método ágil que divide o processo de desenvolvimento em duas grandes fases: 1a Concepção e Planejamento; 2a Construção. A fase de Construção utiliza apenas duas disciplinas (processos). O nome do método e das disciplinas são, respectivamente",
+        "alternativas":["Feature-Driven Development","Daily Scrum","Dynamic Systems Developmen","Rapid Application Development"],
+        "resposta":"0", 
+        "tema": "3",
+        "id": "48"
+    },
+    {
+        "pergunta":"Com relação às metodologias ágeis XP, Scrum e UP e à metodologia RUP, assinale a opção correta.",
+        "alternativas":["A padronização da arquitetura de código-fonte é o foco principal da metodologia RUP.","As metodologias ágeis são focadas no produto, sendo caracterizadas pela ausência de modelo de dados, de diagramas de classes e de documentação de código-fonte.","A metodologia RUP, fundamentada em um modelo preditivo com foco no planejamento futuro, realiza entregas de software executável na mesma dinâmica das metodologias ágeis.","Os métodos ágeis podem ser classificados como métodos adaptativos à necessidade de desenvolvimento de software, pois mudam conforme a necessidade do projeto, diferentemente das metodologias tradicionais de desenvolvimento de software."],
+        "resposta":"3", 
+        "tema": "3",
+        "id": "49"
+    },
+    {
+        "pergunta":"A metodologia de métodos ágeis de desenvolvimento de software explora, principalmente, interação, trecho de código executável e colaboração do cliente ao invés de processos, ferramentas e negociações de contratos que são características fundamentais da metodologia tradicional. A partir dessas considerações, assinale a afirmativa correta",
+        "alternativas":["O meio de entrega do software nos métodos ágeis é contínuo, a fim de satisfazer o cliente do início ao fim.","O Modelo Sequencial Linear (Modelo Cascata) foi o primeiro modelo de desenvolvimento de software dos métodos ágeis.","Nos métodos tradicionais, os clientes fazem parte da equipe de desenvolvimento. ","Documentação é a primeira medida de progresso dos métodos ágeis."],
+        "resposta":"0", 
+        "tema": "3",
+        "id": "50"
     }                 
     
-]	}
+]	} 
