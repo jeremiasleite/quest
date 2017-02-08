@@ -13,15 +13,15 @@ public class Inicio {
 				
 		Group root = new Group();
 		
-		Scene scene = new Scene(root,1023,674);		
+		Scene scene = new Scene(root,1200,674);		
 		
-		Canvas canvas = new Canvas( 1023, 674 );
+		Canvas canvas = new Canvas( 1200, 674 );
 		root.getChildren().addAll(canvas, Questao.tema(), Tabuleiro.vez(numJogadores), Questao.resposta());
 		
 	    GraphicsContext gc = canvas.getGraphicsContext2D();
 	    
 	    Image tabuleiro = new Image( "Tabuleiro.png" );
-	    gc.drawImage( tabuleiro, 0, 0, 1023, 674);	
+	    gc.drawImage( tabuleiro, 0, 0, 1200, 674);	
 	    
 	    Jogador.jogadores_init(numJogadores, root);
 	    
