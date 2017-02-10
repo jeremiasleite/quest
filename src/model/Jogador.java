@@ -27,8 +27,24 @@ public class Jogador {
 		}
 	}
 	
-	public boolean[] getFichas(){
-		return this.fichas;
+	/**Método que retorna todas as fichas com valores true	 
+	 * @return int[] - retorna uma lista com as fichas que o jogador ainda possui*/
+	public int[] getPossuiFichas(){		
+		int cont = 0;
+		for (int i = 0; i < this.fichas.length; i++) {
+			if(this.fichas[i]==true){
+				cont = cont+1;
+			}			 
+		}
+		int possuiFichas[] = new int[cont];
+		cont = 0;
+		for (int i = 0; i < this.fichas.length; i++) {
+			if(this.fichas[i]==true){
+				possuiFichas[cont] = i+1;
+				cont++;
+			}			 
+		}		
+		return possuiFichas;
 	}
 
 	public int getPosicao() {
