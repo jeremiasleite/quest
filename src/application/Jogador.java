@@ -6,7 +6,7 @@ import javafx.scene.shape.Circle;
 
 public class Jogador {
 	
-	private static model.Jogador j = new model.Jogador();
+	private static model.JogadorCoordenada j = new model.JogadorCoordenada();
 	private static Circle player1 = new Circle();
 	private static Circle player2 = new Circle();
 	

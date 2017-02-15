@@ -54,17 +54,17 @@ public class Main extends Application {
 			
 			Group root = new Group();
 			
-			Scene scene = new Scene(root,1023,674);
+			Scene scene = new Scene(root,1200,674);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
 			
-			Canvas canvas = new Canvas( 1023, 674 );
+			Canvas canvas = new Canvas( 1200, 674 );
 		    root.getChildren().addAll( canvas, btnJogar, btnJogadores );
 		    
 		    GraphicsContext gc = canvas.getGraphicsContext2D();
 		    
-		    Image backgroud = new Image( "backgroud.png" );
-		    gc.drawImage( backgroud, 0, 0, 1023, 674);	//(image, posi��o horizontal em px, posi��o vertical em px, largura em px, altura em px)
+		    Image backgroud = new Image( "background.png" );
+		    gc.drawImage( backgroud, 0, 0, 1200, 674);	//(image, posi��o horizontal em px, posi��o vertical em px, largura em px, altura em px)
 		    
 		    Image logo = new Image( "logo.png" );
 		    gc.drawImage( logo, 160, 10, 714, 500); //(image, posi��o horizontal em px, posi��o vertical em px, largura em px, altura em px)    
