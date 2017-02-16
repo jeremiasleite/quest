@@ -114,10 +114,7 @@ public class JogarConsole {
 					break;
 				}
 			}	
-		}
-		
-		
-		
+		}	
 	}	
 	
 	

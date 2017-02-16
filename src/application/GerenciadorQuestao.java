@@ -49,33 +49,33 @@ public class GerenciadorQuestao {
 		if(tema == 0){
 			Random gerador = new Random();
 			int index = gerador.nextInt(this.questaoSC.size());
-			while(estaRemovidoSC[index]==true){
+			//while(estaRemovidoSC[index]==true){
 				index = gerador.nextInt(this.questaoSC.size());
-			}
+			//}
 			estaRemovidoSC[index] = true;			
 			return this.questaoSC.get(index);
 		}else if(tema == 1){
 			Random gerador = new Random();
 			int index = gerador.nextInt(this.questaoXP.size());
-			while(estaRemovidoXP[index]==true){
+			//while(estaRemovidoXP[index]==true){
 				index = gerador.nextInt(this.questaoXP.size());
-			}
+			//}
 			estaRemovidoXP[index] = true;
 			return this.questaoXP.get(index);
 		}else if(tema == 2){
 			Random gerador = new Random();
 			int index = gerador.nextInt(this.questaoFDD.size());
-			while(estaRemovidoFDD[index]==true){
+			//while(estaRemovidoFDD[index]==true){
 				index = gerador.nextInt(this.questaoFDD.size());
-			}
+			//}
 			estaRemovidoFDD[index] = true;
 			return this.questaoFDD.get(index);
 		}else if(tema == 3){
 			Random gerador = new Random();
 			int index = gerador.nextInt(this.questaoDSDM.size());
-			while(estaRemovidoDSDM[index]==true){
+			//while(estaRemovidoDSDM[index]==true){
 				index = gerador.nextInt(this.questaoDSDM.size());
-			}
+			//}
 			estaRemovidoDSDM[index] = true;
 			return this.questaoDSDM.get(index);
 		}else{

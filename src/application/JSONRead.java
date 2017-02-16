@@ -1,8 +1,11 @@
 package application;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import org.json.simple.JSONArray;
@@ -44,8 +47,7 @@ public class JSONRead {
 		
 		try {
 			//Salva no objeto JSONObject o que o parse tratou do arquivo
-			jsonObject = (JSONObject) parser.parse(new FileReader(
-					"src/perguntas.json"));		
+			jsonObject = (JSONObject) parser.parse(new BufferedReader(new InputStreamReader(new FileInputStream("src/perguntas.json"), "UTF-8")));		
 			
 			JSONArray jsonQuestoes = new JSONArray();
 			jsonQuestoes = (JSONArray) jsonObject.get("questoes");

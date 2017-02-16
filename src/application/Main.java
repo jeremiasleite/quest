@@ -18,7 +18,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		//Bot�o incrementa n�mero de jogadores
-		Button btnJogadores = new Button();		
+		/*Button btnJogadores = new Button();		
         btnJogadores.setText("2 Jogadores");        
         btnJogadores.setCenterShape(true);
         btnJogadores.setTranslateY(430);
@@ -34,7 +34,7 @@ public class Main extends Application {
             	}            	           	
             	btnJogadores.setText(numJogadores +" Jogadores");
             }
-        });
+        });*/
         
         //Bot�o incrementa n�mero de jogadores
         Button btnJogar = new Button();		
@@ -45,8 +45,9 @@ public class Main extends Application {
         btnJogar.setOnAction(new EventHandler<ActionEvent>() {            
         	@Override
         	public void handle(ActionEvent event) {
-        		System.out.println(numJogadores);
-        		Tabuleiro.tabuleiro(numJogadores, primaryStage);
+        		//System.out.println(numJogadores);
+        		Tabuleiro tabuleiro = new Tabuleiro();
+        		tabuleiro.tabuleiro(numJogadores, primaryStage);
         	}
         });
         
@@ -59,7 +60,7 @@ public class Main extends Application {
 
 			
 			Canvas canvas = new Canvas( 1200, 674 );
-		    root.getChildren().addAll( canvas, btnJogar, btnJogadores );
+		    root.getChildren().addAll( canvas, btnJogar);
 		    
 		    GraphicsContext gc = canvas.getGraphicsContext2D();
 		    

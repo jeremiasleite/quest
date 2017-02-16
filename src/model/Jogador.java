@@ -46,6 +46,12 @@ public class Jogador {
 		}		
 		return possuiFichas;
 	}
+	
+	
+	
+	public boolean[] getFichas() {
+		return fichas;
+	}
 
 	public int getPosicao() {
 		return posicao;
