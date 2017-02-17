@@ -69,12 +69,13 @@ public class Tabuleiro {
 	}
 
 	public void jogar(Group root) {
-		this.contJogadas++;
-		if(this.contJogadas == 7){
+		
+		if(this.contJogadas == 8){
 			this.jogadores.get(0).reiniciarFichas();
 			this.jogadores.get(1).reiniciarFichas();
 			this.contJogadas = 1;
 		}
+		this.contJogadas++;
 		setTemas(this.jogadores.get(this.vez).getPosicao(), root);
 
 	}
