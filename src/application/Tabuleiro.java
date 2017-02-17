@@ -104,7 +104,7 @@ public class Tabuleiro {
 		labelPergunta.setText(questao.getPergunta());
 		labelPergunta.setTranslateY(290);
 		labelPergunta.setTranslateX(742);
-		labelPergunta.setMaxWidth(450);// limitar tamanho da linha pergunta e
+		labelPergunta.setMaxWidth(440);// limitar tamanho da linha pergunta e
 										// quebra linha
 		labelPergunta.setWrapText(true);
 		labelPergunta.setFont(new Font("Helvetica", 13));
@@ -231,7 +231,7 @@ public class Tabuleiro {
 		labelPergunta.setText(questao.getPergunta());
 		labelPergunta.setTranslateY(290);
 		labelPergunta.setTranslateX(742);
-		labelPergunta.setMaxWidth(450);// limitar tamanho da linha pergunta e
+		labelPergunta.setMaxWidth(440);// limitar tamanho da linha pergunta e
 										// quebra linha
 		labelPergunta.setWrapText(true);
 		labelPergunta.setFont(new Font("Helvetica", 13));
@@ -512,11 +512,21 @@ public class Tabuleiro {
 
 	public void setTemas(int posicao, Group root) {
 		Label mostrarVez = mostarVez(root);
+		Label labelTema = new Label();
+		labelTema.setText("Escolha um dos temas!");
+		labelTema.setTranslateY(350);
+		labelTema.setTranslateX(742);
+		labelTema.setMaxWidth(450);// limitar tamanho da linha pergunta e
+										// quebra linha
+		labelTema.setWrapText(true);
+		labelTema.setFont(new Font("Helvetica", 20));
+		labelTema.setTextFill(Color.web("#000000"));
+		
 		root.getChildren().add(mostrarVez);
 		int tema = this.tabuleiro[posicao];
 		
 		if (posicao == 0) {// jogador está na casa inicial			
-
+			root.getChildren().add(labelTema);
 			Button btnScrum = new Button();
 			btnScrum.setText("Scrum");
 			btnScrum.setCenterShape(true);
@@ -574,7 +584,7 @@ public class Tabuleiro {
 			btnScrum.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum, mostrarVez);
+					root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum, mostrarVez, labelTema);
 					mostrarPergunta(0, root);
 				}
 			});
@@ -582,7 +592,7 @@ public class Tabuleiro {
 			btnDsdm.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum, mostrarVez);
+					root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum, mostrarVez, labelTema);
 					mostrarPergunta(3, root);
 				}
 			});
@@ -590,7 +600,7 @@ public class Tabuleiro {
 			btnXp.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum, mostrarVez);
+					root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum, mostrarVez, labelTema);
 					mostrarPergunta(1, root);
 				}
 			});
@@ -598,11 +608,12 @@ public class Tabuleiro {
 			btnFDD.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum, mostrarVez);
+					root.getChildren().removeAll(btnFDD, btnXp, btnDsdm, btnScrum, mostrarVez, labelTema);
 					mostrarPergunta(2, root);
 				}
 			});
 		}else if(tema ==4){
+			root.getChildren().add(labelTema);
 			Button btnXp = new Button();
 			btnXp.setText("XP");
 			btnXp.setCenterShape(true);
@@ -632,7 +643,7 @@ public class Tabuleiro {
 			btnXp.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnFDD, btnXp, mostrarVez);
+					root.getChildren().removeAll(btnFDD, btnXp, mostrarVez, labelTema);
 					mostrarPergunta(1, root);
 				}
 			});
@@ -640,11 +651,12 @@ public class Tabuleiro {
 			btnFDD.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnFDD, btnXp, mostrarVez);
+					root.getChildren().removeAll(btnFDD, btnXp, mostrarVez, labelTema);
 					mostrarPergunta(2, root);
 				}
 			});
 		}else if(tema==5){
+			root.getChildren().add(labelTema);
 			Button btnScrum = new Button();
 			btnScrum.setText("Scrum");
 			btnScrum.setCenterShape(true);
@@ -676,7 +688,7 @@ public class Tabuleiro {
 			btnScrum.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnXp, btnScrum, mostrarVez);
+					root.getChildren().removeAll(btnXp, btnScrum, mostrarVez, labelTema);
 					mostrarPergunta(0, root);
 				}
 			});
@@ -684,12 +696,13 @@ public class Tabuleiro {
 			btnXp.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnScrum, btnXp, mostrarVez);
+					root.getChildren().removeAll(btnScrum, btnXp, mostrarVez, labelTema);
 					mostrarPergunta(1, root);
 				}
 			});
 
 		}else if(tema==6){
+			root.getChildren().add(labelTema);
 			Button btnScrum = new Button();
 			btnScrum.setText("Scrum");
 			btnScrum.setCenterShape(true);
@@ -720,7 +733,7 @@ public class Tabuleiro {
 			btnScrum.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnFDD, btnScrum, mostrarVez);
+					root.getChildren().removeAll(btnFDD, btnScrum, mostrarVez, labelTema);
 					mostrarPergunta(0, root);
 				}
 			});
@@ -728,11 +741,11 @@ public class Tabuleiro {
 			btnFDD.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					root.getChildren().removeAll(btnScrum, btnFDD, mostrarVez);
-					mostrarPergunta(1, root);
+					root.getChildren().removeAll(btnScrum, btnFDD, mostrarVez, labelTema);
+					mostrarPergunta(2, root);
 				}
 			});
-		}else{
+		}else{			
 			root.getChildren().removeAll(mostrarVez);
 			mostrarPergunta(tema, root);
 		}

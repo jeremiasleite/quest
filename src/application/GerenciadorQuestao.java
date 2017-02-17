@@ -1,20 +1,22 @@
 package application;
 
 import java.util.ArrayList;
-import java.util.Random;
+import java.util.Collections;
 
 import model.Questao;
 
 public class GerenciadorQuestao {
 	
-	private ArrayList<Questao> questaoSC;
-	private boolean estaRemovidoSC[];
+	private ArrayList<Questao> questaoSC;	
+	private int indexSC=0;
+		
 	private ArrayList<Questao> questaoXP;
-	private boolean estaRemovidoXP[];
+	private int indexXP = 0;
+	
 	private ArrayList<Questao> questaoFDD;
-	private boolean estaRemovidoFDD[];
+	private int indexFDD = 0;
 	private ArrayList<Questao> questaoDSDM;
-	private boolean estaRemovidoDSDM[];	
+	private int indexDSDM = 0;
 
 	public GerenciadorQuestao() {
 		JSONRead lerQuestao = new JSONRead();
@@ -24,78 +26,54 @@ public class GerenciadorQuestao {
 		this.questaoFDD = lerQuestao.getQuestoesPorTema(2);
 		this.questaoDSDM = lerQuestao.getQuestoesPorTema(3);
 		
-		estaRemovidoSC = new boolean[this.questaoSC.size()];
-		estaRemovidoXP = new boolean[this.questaoXP.size()];
-		estaRemovidoFDD = new boolean[this.questaoFDD.size()];
-		estaRemovidoDSDM = new boolean[this.questaoDSDM.size()];
 		
-		for (int i = 0; i < estaRemovidoSC.length; i++) {
-			estaRemovidoSC[i] = false;
-		}
-		for (int i = 0; i < estaRemovidoXP.length; i++) {
-			estaRemovidoXP[i] = false;
-		}
-		for (int i = 0; i < estaRemovidoFDD.length; i++) {
-			estaRemovidoFDD[i] = false;
-		}
-		for (int i = 0; i < estaRemovidoDSDM.length; i++) {
-			estaRemovidoDSDM[i] = false;
-		}
+		Collections.shuffle(questaoSC);
+		Collections.shuffle(questaoXP);
+		Collections.shuffle(questaoFDD);
+		Collections.shuffle(questaoDSDM);
+		
 		
 	}
 
 	public Questao sortearQuestao(int tema){
 		 
-		if(tema == 0){
-			Random gerador = new Random();
-			int index = gerador.nextInt(this.questaoSC.size());
-			//while(estaRemovidoSC[index]==true){
-				index = gerador.nextInt(this.questaoSC.size());
-			//}
-			estaRemovidoSC[index] = true;			
-			return this.questaoSC.get(index);
+		if(tema == 0){			
+			if(this.indexSC>=this.questaoSC.size()){
+				Collections.shuffle(questaoSC);
+				this.indexSC=0;
+			}
+			Questao saida = this.questaoSC.get(this.indexSC);
+			this.indexSC++;
+			return saida;
 		}else if(tema == 1){
-			Random gerador = new Random();
-			int index = gerador.nextInt(this.questaoXP.size());
-			//while(estaRemovidoXP[index]==true){
-				index = gerador.nextInt(this.questaoXP.size());
-			//}
-			estaRemovidoXP[index] = true;
-			return this.questaoXP.get(index);
+			if(this.indexXP>=this.questaoXP.size()){
+				Collections.shuffle(questaoXP);
+				this.indexXP=0;
+			}
+			Questao saida = this.questaoXP.get(this.indexXP);
+			this.indexXP++;
+			return saida;
 		}else if(tema == 2){
-			Random gerador = new Random();
-			int index = gerador.nextInt(this.questaoFDD.size());
-			//while(estaRemovidoFDD[index]==true){
-				index = gerador.nextInt(this.questaoFDD.size());
-			//}
-			estaRemovidoFDD[index] = true;
-			return this.questaoFDD.get(index);
+			if(this.indexFDD>=this.questaoFDD.size()){
+				Collections.shuffle(questaoFDD);
+				this.indexFDD=0;
+			}
+			Questao saida = this.questaoFDD.get(this.indexFDD);
+			this.indexFDD++;
+			return saida;
 		}else if(tema == 3){
-			Random gerador = new Random();
-			int index = gerador.nextInt(this.questaoDSDM.size());
-			//while(estaRemovidoDSDM[index]==true){
-				index = gerador.nextInt(this.questaoDSDM.size());
-			//}
-			estaRemovidoDSDM[index] = true;
-			return this.questaoDSDM.get(index);
+			if(this.indexDSDM>=this.questaoDSDM.size()){
+				Collections.shuffle(questaoDSDM);
+				this.indexDSDM=0;
+			}
+			Questao saida = this.questaoDSDM.get(this.indexDSDM);
+			this.indexDSDM++;
+			return saida;
 		}else{
 				return null;
 		}
 		
 	}
 	
-	public void limparRemovido(){
-		for (int i = 0; i < estaRemovidoSC.length; i++) {
-			estaRemovidoSC[i] = false;
-		}
-		for (int i = 0; i < estaRemovidoXP.length; i++) {
-			estaRemovidoXP[i] = false;
-		}
-		for (int i = 0; i < estaRemovidoFDD.length; i++) {
-			estaRemovidoFDD[i] = false;
-		}
-		for (int i = 0; i < estaRemovidoDSDM.length; i++) {
-			estaRemovidoDSDM[i] = false;
-		}
-	}
+	
 }
