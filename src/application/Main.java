@@ -60,7 +60,7 @@ public class Main extends Application {
 
 			
 			Canvas canvas = new Canvas( 1200, 674 );
-		    root.getChildren().addAll( canvas, btnJogar);
+		    root.getChildren().addAll( canvas, btnJogar );
 		    
 		    GraphicsContext gc = canvas.getGraphicsContext2D();
 		    

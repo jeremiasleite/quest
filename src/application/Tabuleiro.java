@@ -39,7 +39,7 @@ public class Tabuleiro {
 		super();
 		this.gestorQuestao = new GerenciadorQuestao();
 		for (int i = 0; i < 2; i++) {
-			Jogador novoJogador = new Jogador();
+			Jogador novoJogador = new Jogador();			
 			this.jogadores.add(novoJogador);
 		}
 	}
@@ -325,7 +325,29 @@ public class Tabuleiro {
 					labelVencedor.setFont(new Font("Helvetica", 30));
 					labelVencedor.setTextFill(Color.web("#000000"));
 					
-					root.getChildren().add(labelVencedor);
+					Button btnJogarNovamente = new Button();
+					btnJogarNovamente.setText("Jogar Novamente");
+					btnJogarNovamente.setCenterShape(true);
+					btnJogarNovamente.setTranslateY(440);
+					btnJogarNovamente.setTranslateX(770);
+					btnJogarNovamente.setStyle("-fx-padding: 10;"+					
+							"-fx-background-radius: 5;"+
+							"-fx-min-width: 150px; " +
+			                "-fx-min-height: 40px; " +
+			                "-fx-max-width: 150px; " +
+			                "-fx-max-height: 40px;"
+							);
+					root.getChildren().addAll(labelVencedor,btnJogarNovamente);
+					btnJogarNovamente.setOnAction(new EventHandler<ActionEvent>() {
+						@Override
+						public void handle(ActionEvent event) {
+							root.getChildren().removeAll(btnJogarNovamente,labelVencedor, mostrarVez);
+							application.Jogador.andar(1, 0, root);
+							application.Jogador.andar(2, 0, root);
+							Tabuleiro tab = new Tabuleiro();
+							tab.jogar(root);
+						}
+					});
 				}else{
 					mudarVez();
 					jogar(root);
@@ -354,7 +376,29 @@ public class Tabuleiro {
 					labelVencedor.setFont(new Font("Helvetica", 30));
 					labelVencedor.setTextFill(Color.web("#000000"));
 					
-					root.getChildren().add(labelVencedor);
+					Button btnJogarNovamente = new Button();
+					btnJogarNovamente.setText("Jogar Novamente");
+					btnJogarNovamente.setCenterShape(true);
+					btnJogarNovamente.setTranslateY(440);
+					btnJogarNovamente.setTranslateX(770);
+					btnJogarNovamente.setStyle("-fx-padding: 10;"+					
+							"-fx-background-radius: 5;"+
+							"-fx-min-width: 150px; " +
+			                "-fx-min-height: 40px; " +
+			                "-fx-max-width: 150px; " +
+			                "-fx-max-height: 40px;"
+							);
+					root.getChildren().addAll(labelVencedor,btnJogarNovamente);
+					btnJogarNovamente.setOnAction(new EventHandler<ActionEvent>() {
+						@Override
+						public void handle(ActionEvent event) {
+							root.getChildren().removeAll(btnJogarNovamente,labelVencedor, mostrarVez);
+							application.Jogador.andar(1, 0, root);
+							application.Jogador.andar(2, 0, root);
+							Tabuleiro tab = new Tabuleiro();
+							tab.jogar(root);
+						}
+					});
 				}else{
 					mudarVez();
 					jogar(root);
@@ -384,7 +428,29 @@ public class Tabuleiro {
 					labelVencedor.setFont(new Font("Helvetica", 30));
 					labelVencedor.setTextFill(Color.web("#000000"));
 					
-					root.getChildren().add(labelVencedor);
+					Button btnJogarNovamente = new Button();
+					btnJogarNovamente.setText("Jogar Novamente");
+					btnJogarNovamente.setCenterShape(true);
+					btnJogarNovamente.setTranslateY(440);
+					btnJogarNovamente.setTranslateX(770);
+					btnJogarNovamente.setStyle("-fx-padding: 10;"+					
+							"-fx-background-radius: 5;"+
+							"-fx-min-width: 150px; " +
+			                "-fx-min-height: 40px; " +
+			                "-fx-max-width: 150px; " +
+			                "-fx-max-height: 40px;"
+							);
+					root.getChildren().addAll(labelVencedor,btnJogarNovamente);
+					btnJogarNovamente.setOnAction(new EventHandler<ActionEvent>() {
+						@Override
+						public void handle(ActionEvent event) {
+							root.getChildren().removeAll(btnJogarNovamente,labelVencedor, mostrarVez);
+							application.Jogador.andar(1, 0, root);
+							application.Jogador.andar(2, 0, root);
+							Tabuleiro tab = new Tabuleiro();
+							tab.jogar(root);
+						}
+					});
 				}else{
 					mudarVez();
 					jogar(root);
@@ -413,7 +479,29 @@ public class Tabuleiro {
 					labelVencedor.setFont(new Font("Helvetica", 30));
 					labelVencedor.setTextFill(Color.web("#000000"));
 					
-					root.getChildren().add(labelVencedor);
+					Button btnJogarNovamente = new Button();
+					btnJogarNovamente.setText("Jogar Novamente");
+					btnJogarNovamente.setCenterShape(true);
+					btnJogarNovamente.setTranslateY(440);
+					btnJogarNovamente.setTranslateX(770);
+					btnJogarNovamente.setStyle("-fx-padding: 10;"+					
+							"-fx-background-radius: 5;"+
+							"-fx-min-width: 150px; " +
+			                "-fx-min-height: 40px; " +
+			                "-fx-max-width: 150px; " +
+			                "-fx-max-height: 40px;"
+							);
+					root.getChildren().addAll(labelVencedor,btnJogarNovamente);
+					btnJogarNovamente.setOnAction(new EventHandler<ActionEvent>() {
+						@Override
+						public void handle(ActionEvent event) {
+							root.getChildren().removeAll(btnJogarNovamente,labelVencedor, mostrarVez);
+							application.Jogador.andar(1, 0, root);
+							application.Jogador.andar(2, 0, root);
+							Tabuleiro tab = new Tabuleiro();
+							tab.jogar(root);
+						}
+					});
 				}else{
 					mudarVez();
 					jogar(root);
