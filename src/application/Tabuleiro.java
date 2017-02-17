@@ -124,6 +124,13 @@ public class Tabuleiro {
 		btnaposta1.setCenterShape(true);
 		btnaposta1.setTranslateY(440);
 		btnaposta1.setTranslateX(770);
+		btnaposta1.setStyle(
+                "-fx-background-radius: 5em; " +
+                "-fx-min-width: 30px; " +
+                "-fx-min-height: 30px; " +
+                "-fx-max-width: 30px; " +
+                "-fx-max-height: 30px;"
+        );
 		if (fichas[0] == false) {
 			btnaposta1.setDisable(true);
 		}
@@ -132,6 +139,13 @@ public class Tabuleiro {
 		btnaposta2.setCenterShape(true);
 		btnaposta2.setTranslateY(440);
 		btnaposta2.setTranslateX(880);
+		btnaposta2.setStyle(
+                "-fx-background-radius: 5em; " +
+                "-fx-min-width: 30px; " +
+                "-fx-min-height: 30px; " +
+                "-fx-max-width: 30px; " +
+                "-fx-max-height: 30px;"
+        );
 		if (fichas[1] == false) {
 			btnaposta2.setDisable(true);
 		}
@@ -140,6 +154,13 @@ public class Tabuleiro {
 		btnaposta3.setCenterShape(true);
 		btnaposta3.setTranslateY(500);
 		btnaposta3.setTranslateX(770);
+		btnaposta3.setStyle(
+                "-fx-background-radius: 5em; " +
+                "-fx-min-width: 30px; " +
+                "-fx-min-height: 30px; " +
+                "-fx-max-width: 30px; " +
+                "-fx-max-height: 30px;"
+        );
 		if (fichas[2] == false) {
 			btnaposta3.setDisable(true);
 		}
@@ -148,6 +169,13 @@ public class Tabuleiro {
 		btnaposta4.setCenterShape(true);
 		btnaposta4.setTranslateY(500);
 		btnaposta4.setTranslateX(880);
+		btnaposta4.setStyle(
+                "-fx-background-radius: 5em; " +
+                "-fx-min-width: 30px; " +
+                "-fx-min-height: 30px; " +
+                "-fx-max-width: 30px; " +
+                "-fx-max-height: 30px;"
+        );
 		if (fichas[3] == false) {
 			btnaposta4.setDisable(true);
 		}
@@ -406,24 +434,53 @@ public class Tabuleiro {
 			btnScrum.setCenterShape(true);
 			btnScrum.setTranslateY(440);
 			btnScrum.setTranslateX(770);
+			btnScrum.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
 			
 			Button btnDsdm = new Button();
 			btnDsdm.setText("DSDM");
 			btnDsdm.setCenterShape(true);
 			btnDsdm.setTranslateY(440);
-			btnDsdm.setTranslateX(880);
+			btnDsdm.setTranslateX(885);
+			btnDsdm.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
 			
 			Button btnXp = new Button();
 			btnXp.setText("XP");
 			btnXp.setCenterShape(true);
 			btnXp.setTranslateY(500);
-			btnXp.setTranslateX(780);
+			btnXp.setTranslateX(770);
+			btnXp.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
 			
 			Button btnFDD = new Button();
 			btnFDD.setText("FDD");
 			btnFDD.setCenterShape(true);
 			btnFDD.setTranslateY(500);
 			btnFDD.setTranslateX(885);
+			btnFDD.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
+			
 			root.getChildren().addAll(btnFDD, btnXp, btnDsdm, btnScrum);
 			
 			btnScrum.setOnAction(new EventHandler<ActionEvent>() {
@@ -462,13 +519,27 @@ public class Tabuleiro {
 			btnXp.setText("XP");
 			btnXp.setCenterShape(true);
 			btnXp.setTranslateY(500);
-			btnXp.setTranslateX(780);
+			btnXp.setTranslateX(770);
+			btnXp.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
 			
 			Button btnFDD = new Button();
 			btnFDD.setText("FDD");
 			btnFDD.setCenterShape(true);
 			btnFDD.setTranslateY(500);
 			btnFDD.setTranslateX(885);
+			btnFDD.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
 			root.getChildren().addAll(btnFDD, btnXp);
 			btnXp.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
@@ -491,12 +562,26 @@ public class Tabuleiro {
 			btnScrum.setCenterShape(true);
 			btnScrum.setTranslateY(440);
 			btnScrum.setTranslateX(770);
+			btnScrum.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
 			
 			Button btnXp = new Button();
 			btnXp.setText("XP");
 			btnXp.setCenterShape(true);
 			btnXp.setTranslateY(500);
-			btnXp.setTranslateX(780);
+			btnXp.setTranslateX(770);
+			btnXp.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
 			
 			root.getChildren().addAll(btnXp, btnScrum);
 			
@@ -522,13 +607,26 @@ public class Tabuleiro {
 			btnScrum.setCenterShape(true);
 			btnScrum.setTranslateY(440);
 			btnScrum.setTranslateX(770);
+			btnScrum.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
 			
 			Button btnFDD = new Button();
 			btnFDD.setText("FDD");
 			btnFDD.setCenterShape(true);
 			btnFDD.setTranslateY(500);
-			btnFDD.setTranslateX(780);
-			
+			btnFDD.setTranslateX(885);
+			btnFDD.setStyle("-fx-padding: 10;"+					
+					"-fx-background-radius: 5;"+
+					"-fx-min-width: 60px; " +
+	                "-fx-min-height: 40px; " +
+	                "-fx-max-width: 60px; " +
+	                "-fx-max-height: 40px;"
+					);
 			root.getChildren().addAll(btnFDD, btnScrum);
 			
 			btnScrum.setOnAction(new EventHandler<ActionEvent>() {
